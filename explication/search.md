@@ -1,7 +1,7 @@
 Source code :
 ```py
 def search(valuename: str, *, categorie: str = None):
-  return path.isfile(f'{f"{categorie}/" if categorie is None else ""}{valuename}')
+  return path.isfile(f'{f"{categorie}/" if categorie is None else ""}{valuename}.json')
 ```
 # stats
 Nombre de variables : 0
