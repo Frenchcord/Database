@@ -7,6 +7,22 @@ def get(valuename: str, *, categorie = None):
     return load(f)['value']
 ```
 # stats
-variables : 1
+Nombre de variables : 1
 <br>
-nombre de if : 2
+Nombre de if : 2
+<br>
+Nombre de lignes : 4
+<br>
+Nombre d'arguments : 2
+# pourquoi cela
+La variable e va stocker la variable de fichier qui nous evite de faire un if de plus et donc perdre de la vitesse
+<br>
+Pour voir si la valeure existe nous avons un if qui va raise "valueDoesNotExist"
+<br>
+nous ouvrons le fichier en mode read et retournons la 'value' du dict que nous loadons avec "load"
+# je veux prendre plusieurs valeurs comment faire?
+Une boucle for in
+```py
+for i in items:
+  get.append(db.get(i))
+```
