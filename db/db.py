@@ -1,4 +1,6 @@
-from os import listdir, mkdir, rmdir, path; from json import load, dump; from os import remove as delet
+from os import listdir, mkdir, rmdir, path
+from json import load, dump
+from os import remove as delet
 class ValueAlreadyExist(Exception):
   pass
 class ValueNotExist(Exception):
